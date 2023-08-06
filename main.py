@@ -163,6 +163,6 @@ class MyHandler(http.server.SimpleHTTPRequestHandler):
       self.end_headers()
 
 if __name__ == '__main__':
-  # FIRING UP THE SERVER ON LOCALHOST PORT 8000
+  # FIRING UP THE SERVER ON LOCALHOST PORT 8000,and setting MyHandler as the server handler 
   server = http.server.HTTPServer(('localhost', 8000), MyHandler)
   server.serve_forever()
